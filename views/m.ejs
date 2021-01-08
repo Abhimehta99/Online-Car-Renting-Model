@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="navigation bar/h.css">
+	<link rel="stylesheet" href="navigation bar/n.css">
+	<link rel="stylesheet" href="steps/s.css">
+	<link rel="stylesheet" href="why/w.css">
+	<link rel="stylesheet" href="img slider/te1.css">
+	<link rel="stylesheet" href="signup/fb.css">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #f4f4f4;
+		}
+	</style>
+	<title>HOMEPAGE</title>
+</head>
+
+<body>
+	<div class="flex-container">
+
+
+		<div class="nav">
+			<a href="/">HOME</a>
+			<% if (user){%>
+			<p>welcome <%= user.name%></p>
+			<a href="/logout" class="hi">LOGOUT</a>
+			<%} else { %>
+			<a href="/signup" class="sign">SIGN UP</a>
+			<a href="/login" class="hi">LOGIN</a>
+			<% } %>
+		</div>
+		<script src="ejs.js"></script>
+
+		<div class="container">
+			<div id="left" class="arrow"></div>
+			<div id="right" class="arrow"></div>
+			<div class="slider">
+				<div class="slide slide1">
+					<div class="text">
+						<span id="c1">SUV</span>
+						<span id="c4"><a href="/suv" target="_self" method="post" class="btn">BOOK</a></span>
+					</div>
+				</div>
+				<div class="slide slide2">
+					<div class="text">
+						<span id="c5">SEDAN</span>
+						<span id="c4"><a href="/sedan" target="_self" class="btn">BOOK</a></span>
+					</div>
+				</div>
+				<div class="slide slide3">
+					<div class="text">
+						<span id="c2">HATCHBACK</span>
+						<span id="c4"><a href="/hatchback" class="btn">BOOK</a></span>
+					</div>
+				</div>
+				<div class="slide slide4">
+					<div class="text">
+						<span id="c3">ELECTRIC</span>
+						<span id="c4"><a href="/electric" class="btn">BOOK</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="img slider\te1.js"></script><br>
+		<hr><br>
+
+		<div class="header">RENT A CAR IN THREE EASY STEPS</div><br><br>
+		<div class="steps">
+			<div
+				style="background-image: url('steps/choosecar.png'); background-position: center; background-size: 330px 330px;background-blend-mode: overlay;">
+				CHOOSE YOUR CAR</div>
+
+			<p></p>
+			<div
+				style="background-image: url('steps/form.png');background-position: center; background-size: 230px 230px;background-repeat: no-repeat;background-blend-mode: overlay;">
+				FILL IN THE DETAILS</div>
+			<p></p>
+			<div
+				style="background-image: url('steps/cod.png'); background-size: 230px 230px;background-blend-mode: overlay;">
+				PAY ON DELIVERY</div>
+		</div><br><br>
+		<hr><br>
+
+		<div class="header">WHY XYZ</div><br><br>
+		<div class="why">
+			<p
+				style="background-image: url('why/fuel.png'); background-size: 250px 250px;background-blend-mode: overlay;">
+				FUEL COST INCLUDED</p>
+			<p
+				style="background-image: url('why/lp.png');background-position: center; background-size: 330px 330px;background-blend-mode: overlay;">
+				LOWEST PRICES</p>
+			<p
+				style="background-image: url('why/go.png'); background-size: 230px 230px;background-blend-mode: overlay;">
+				GO ANYWHERE</p>
+		</div>
+		<div class="why">
+			<p
+				style="background-image: url('why/24.png'); background-size: 230px 230px;background-blend-mode: overlay;">
+				24*7 ASSISTANCE</p>
+			<p
+				style="background-image: url('why/super.png'); background-size: 300px 300px;background-position: center;background-blend-mode: overlay;">
+				SUPER QUALITY</p>
+			<p
+				style="background-image: url('why/road.png'); background-size: 230px 230px;background-blend-mode: overlay;background-position: center;">
+				DAMAGE INSURANCE</p>
+		</div><br><br>
+		<hr><br>
+
+
+
+	</div>
+
+</body>
+
+</html>

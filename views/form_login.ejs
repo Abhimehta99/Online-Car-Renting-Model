@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../signup/fb.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fcontainer">
+        <div class="box">
+            <p>LOGIN</p>
+            <div onclick="myfunction()" class="close">+</div>
+            <img src="signup\user.png">
+            <form class="text-box" method="POST" action='/login'>
+                <label for="email">E-mail</label>
+                <input name='email' id="email" type="email" placeholder="Email"></input>
+                <label for="password">Password</label>
+                <input name='password1' id="password" type="password" placeholder="Password"></submit>
+                <button  type='submit' class="btn">LOGIN</button>
+            </form>
+            <script>
+                function myfunction() {
+                    location.href = "/";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+app.engine('html', require('ejs').renderFile);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
+
+
+app.get('*',(req,res,next)=>{
+    res.locals.user=req.user || null;
+    next();
+});
+
+
+app.get('/', (req, res,next) => {
+    res.render('m');
+    res.locals.user=req.user || null;
+    next();
+    return user;
+});
+
+
+app.post('/signup/user', [
+    check('password1').isLength({min: 2})],
+    (req, res) => {
+    let persons = new Person();
+    persons.email = req.body.email;
+    persons.name = req.body.name;
+    persons.no = req.body.no;
+    persons.password1 = req.body.password1;
+    
+            persons.save((err) => {
+            if (err) {
+                console.log(err);
+                return;
+            } else {
+                console.log('submitted');
+                res.redirect('/login');
+            }
+        });
+    
+});
+
+//passport.js
+
+const LocalStratergy = require('passport-local').Strategy;
+const Person = require('../models/article');
+const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose'); 
+
+
+mongoose.connect('mongodb://localhost/test', {
+    useNewUrlParser: true,useUnifiedTopology: true,useCreateIndex:true
+    }).catch(err=>console.log(err));
+
+module.exports = function(passport){
+    passport.use(new LocalStratergy(function(email, password1, done){
+        Person.findOne({email:email}, function(err, article){
+            if(err) {return done(err);}
+            if(!article){
+                return done(null, false);
+            }
+            if(!article.validPassword(password1)){
+               return done(null, false);
+                }else{
+                    return done(null,persons);
+                }
+            }); 
+        
+    passport.serializeUser((article, done)=>{
+        done(null, article.id);
+    });
+    passport.deserializeUser(function(id, done){
+        Person.findById(id,(err,article)=>{
+            done(err, article);
+        });
+    });
+}
+));
+};

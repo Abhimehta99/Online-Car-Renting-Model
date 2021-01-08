@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../signup/fb.css">
+    <title>SIGN UP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signupbox">
+            <p>SIGN UP</p>
+            <div onclick="myfunction()" class="signupclose">+</div>
+            <img src="/signup/user.png">
+            <form class="text-box" method="POST" action="/signup/user">
+                <label for="email1">E-mail</label>
+                <input name='email' id="email1" type="email" placeholder="Email"></input>
+                <label for="FullName">Full Name</label>
+                <input name='name' id="Fullname" type="text" placeholder="Name On Driving License"></input>
+                <label for="no">Phone Number</label>
+                <input name='no' id="no" type="tel" placeholder="Phone Number" pattern="[0-9]{10}"></input>
+                <label for="password1">Password</label>
+                <input name='password1' id="password1" type="password" placeholder="Password"></input>
+                <button  type='submit' class="btn">SIGN UP</button>
+            </form>
+            <script>
+                function myfunction() {
+                    location.href = "/";
+                }
+            </script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

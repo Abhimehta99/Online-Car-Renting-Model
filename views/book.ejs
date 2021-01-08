@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BOOKING</title>
+    <link rel="stylesheet" href='/book/book.css'>
+    
+</head>
+
+<body>
+
+    <div class="fcontainer">
+        <div class="box">
+            <p>BOOK</p>
+            <div onclick="myfunction()" class="close">+</div>
+
+            <form class="text-box" method="POST" action='/book'>
+
+                <label for="start">Address</label>
+                <input type="text" name="start" id="start" placeholder="Address"></input>
+
+                <label for="email">E-mail</label>
+                <input name='email' id="email" type="email" placeholder="Email"></input>
+
+                <label for="FullName">Full Name</label>
+                <input name='name1' id="Fullname" type="text" placeholder="Name On Driving License"></input>
+
+                <label for="no">Phone Number</label>
+                <input name='no' id="no" type="tel" placeholder="Phone Number" pattern="[0-9]{10}"></input>
+
+                <label for="car">Choose Your Car</label>
+                <select id="cars" name="cars">
+                    <optgroup label="SUV">
+                        <option >HYUNDAI CRETA</option>
+                        <option >HYUNDAI VENUE</option>
+                        <option >TATA NEXON</option>
+                        <option >KIA SELTOS</option>
+                        <option >MARUTI SUZUKI BREZZA</option>
+                        <option >MARUTI SUZUKI ERTIGA</option>
+                        <option >MAHINDRA SCORPIO</option>
+                        <option >TOYOTA INNOVA CRYSTA</option>
+                        <option >MAHINDRA XUV300</option>
+                        <option >TOYOTA FORTUNER</option>
+                        <option >TATA HARRIER</option>
+                        <option >FORD ECOSPORT</option>
+                    </optgroup>
+                    <optgroup label="SEDAN">
+                        <option >HYUNDAI XCENT</option>
+                        <option >TATA TIGOR</option>
+                        <option >SKODA RAPID</option>
+                        <option >HYUNDAI AURA</option>
+                        <option >HONDA AMAZE</option>
+                        <option >MARUTI SUZUKI DZIRE</option>
+                        <option >VOLKSWAGEN VENTO</option>
+                        <option >HYUNDAI ELANTRA</option>
+                        <option >HONDA CIVIC</option>
+                        <option >TOYOTA YARIS</option>
+                        <option >MARUTI SUZUKI CIAZ</option>
+                        <option >HONDA CITY</option>
+                    </optgroup>
+                    <optgroup label="HATCHBACK">
+                        <option >HYUNDAI ELITE I20</option>
+                        <option >MARUTI SUZUKI SWIFT</option>
+                        <option >MARUTI SUZUKI BALENO</option>
+                        <option >HYUNDAI GRAND I10 NIOS</option>
+                        <option >TATA ALTROZ</option>
+                        <option >TATA TIAGO</option>
+                        <option >RENAULT KWID</option>
+                        <option >HYUNDAI I20</option>
+                        <option >VOLKSWAGEN POLO</option>
+                        <option >HYUNDAI SANTRO</option>
+                        <option >MARAUTI SUZUKI WAGON R</option>
+                        <option >MARUTI SUZUKI CELERIO</option>
+
+                    </optgroup>
+                    <optgroup label="ELECTRIC">
+                        <option >TATA NEXON EV</option>
+                        <option >MG ZS EV</option>
+                        <option >HYUNDAI KONA ELECTRIC</option>
+                        <option >TATA TIGOR EV</option>
+                        <option >MAHINDRA E20 PLUS</option>
+                        
+                    </optgroup>
+
+                </select>
+
+                <label for="dob">Date Of Birth</label>
+                <input name='dob' id="dob" type="date" placeholder="mm/dd/yyyy"></input>
+
+                <label for="sdate">Start Date</label>
+                <input name='sdate' id="sdate" type="date" placeholder="mm/dd/yyyy"></input>
+
+                <label for="edate">End Date</label>
+                <input name='edate' id="edate" type="date" placeholder="mm/dd/yyyy"></input>
+
+                <label for="stime">Start Time</label>
+                <input name='stime' id="stime" type="time"></input>
+
+                <label for="etime">End Time</label>
+                <input name='etime' id="no" type="time"></input>
+
+                <button type='submit' class="btn">SUBMIT</button>
+            </form>
+            <script>
+                function myfunction() {
+                    location.href = "/";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

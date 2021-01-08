@@ -1,0 +1,35 @@
+.nav {
+	display: flex;
+	flex-direction: row;
+	background-color: #000000;
+	justify-content: flex-end;
+	height: 60px;
+	align-items: center;
+}
+
+.nav>a:nth-child(1) {
+	margin-right: auto;
+}
+
+.nav>a {
+	font-size: 25px;
+	padding: 5px 20px;
+	text-align: center;
+	background-color: #000000;
+	color: white;
+	text-decoration: none;
+}
+
+.nav>p {
+	font-size: 25px;
+	padding: 5px 20px;
+	text-align: center;
+	background-color: black;
+	color: #0074D9;
+	text-decoration: none;
+}
+
+.nav>a:hover {
+	color: rgba(189, 195, 199, 1);
+
+}

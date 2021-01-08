@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/navigation bar/n.css">
+	<link rel="stylesheet" href="/navigation bar/h.css">
+	<link rel="stylesheet" href="/hatchback img/b.css">
+	<title>HATCHBACK CAR</title>
+<style>
+	
+*{
+margin:0;
+padding:0;
+}
+</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="/" >HOME</a>
+		<% if (user){%>
+		<p>welcome <%= user.name%></p>
+		<a href="/logout" class="hi" >LOGOUT</a>
+		<%} else { %>			
+		<a href="/signup" class="sign" >SIGN UP</a>
+		<a href="/login" class="hi" >LOGIN</a>
+		<% } %>
+	</div><script src="ejs.js"></script>
+<div class="gcontainer">	
+<div class="bcontainer">
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/i20.png"></div>
+			<div id="i2">HYUNDAI ELITE I20</div>
+			<div id="i5"> ₹1045</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">5 bags</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/swift.png"></div>
+			<div id="i2">MARUTI SUZUKI SWIFT</div>
+			<div id="i5"> ₹1005</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 12/km</div>
+			<div id="i18"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/baleno.png"></div>
+			<div id="i2">MARUTI SUZUKI BALENO</div>
+			<div id="i5"> ₹1050</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/i10.png"></div>
+			<div id="i2">HYUNDAI GRAND I10 NIOS</div>
+			<div id="i5"> ₹1000</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 10/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/altroz.png"></div>
+			<div id="i2">TATA ALTROZ</div>
+			<div id="i5"> ₹1100</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 14/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/tiago.png"></div>
+			<div id="i2">TATA TIAGO</div>
+			<div id="i5"> ₹1030</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/kwid.png"></div>
+			<div id="i2">RENAULT KWID</div>
+			<div id="i5"> ₹1000</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 10/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/ignis.png"></div>
+			<div id="i2">HYUNDAI I20</div>
+			<div id="i5"> ₹1150</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 14/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/polo.png"></div>
+			<div id="i2">VOLKSWAGEN POLO</div>
+			<div id="i5"> ₹1050</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/santro.png"></div>
+			<div id="i2">HYUNDAI SANTRO</div>
+			<div id="i5"> ₹950</div>
+			<div id="i6">5 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">2 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 10/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noleft" class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/wagonr.png"></div>
+			<div id="i2"> MARAUTI SUZUKI WAGON R</div>
+			<div id="i5"> ₹1000</div>
+			<div id="i6">4 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">1 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	<div id="noright"  class="car">
+		<div  class="car-details">
+			<div id="i1"><img src="hatchback img/celerio.png"></div>
+			<div id="i2">MARUTI SUZUKI CELERIO</div>
+			<div id="i5"> ₹1000</div>
+			<div id="i6">4 Seater</div>
+			<div id="i7">Manual</div>
+			<div id="i8">1 bags</div>
+			<div id="i3">Petrol</div>
+			<div id="i9">(for first 90 km)</div>
+			<div id="i10">Extra km charge @ ₹ 13/km</div>
+			<div id="i11"></div>
+			<div id="i12"></div>
+			<div id="i13">*(Price includes tax and fuel charges)</div>
+			<div id="i14"></div>
+			<div id="i15"></div>
+			<div id="i16"></div>
+			<div id="i17"><a class="btn1" href="/book">BOOK</a></div>
+		</div>
+				
+	</div>	
+	
+	
+</div>
+</div>
+</body>
+</html>

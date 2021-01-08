@@ -1,0 +1,36 @@
+.lcontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fceed1;
+    padding:18px
+}
+.text{
+    font-size: 40px;
+    color:#2d545e;
+}
+.lcontainer>img{
+    height:500px;
+    width: 400px;
+}
+.text2{
+    font-size: 18px;
+}
+.lbtn{
+    text-decoration:none;
+    border:none;
+	border-radius:5px;
+	background-color:#ff5e6c;
+	color:white;
+	margin-top:10px;
+	padding: 10px 28px;
+    display:flex;
+    max-width:200px;
+   	justify-content:center;
+}
+.lbtn:hover{
+	background-color:white;
+	color:#ff5e6c;
+	border: 2px solid #ff5e6c;
+	cursor: pointer;
+}
