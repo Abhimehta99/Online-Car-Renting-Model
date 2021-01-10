@@ -6,42 +6,47 @@ The car rental system developed in this project is able to let the user login, l
 ## Screenshots
 
 ### HOMEPAGE-
+![](screenshots/P1.png)
 
+![](screenshots/P2.png)
+
+![](screenshots/P3.png)
 
 ### LOGIN –
 
-
+![](screenshots/P4.png)
 
 ### SIGN UP-
 
-
-
+![](screenshots/P5.png)
  
 ### HOMEPAGE AFTER LOGIN-
 
-
+![](screenshots/P6.png)
 
 
 ### BOOKING FORM-
 
+![](screenshots/P7.png)
 
-
+![](screenshots/P8.png)
 
 ### SUV CAR LIST PAGE-
 
-
-
+![](screenshots/P9.png)
 
 ### SEDAN CARS LIST-
 
-
+![](screenshots/P10.png)
 
 ### HATCHBACK CARS LIST PAGE –
 
-
+![](screenshots/P11.png)
 
 ### ELECTRIC CARS LIST PAGE – 
 
-
+![](screenshots/P12.png)
 
 ### AFTER BOOKING YOUR CAR-
+
+![](screenshots/P13.png)
